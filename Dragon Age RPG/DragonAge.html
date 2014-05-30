@@ -20,34 +20,89 @@
 <div class="sheet-wrapper">
     <!-- Trim above -->
     <div class="da">
-        <div class="da-header sheet-2colrow">
-
-            <div class="sheet-col" id="da-logo">
-                <h2>Dragon Age</h2>
-                <div>
-                    <label class="label-inline">Name</label><input class="input-inline" type="text" name="attr_character_name" />
-                </div>
-                <div>
-                    <label class="label-inline">Bkgrnd</label><input class="input-inline" type="text" name="attr_character_bg" />
-                </div>
-            </div>
-
-            <div class="sheet-col">
-                <div class="sheet-3colrow">
-                    <div class="sheet-col">
-                        <label class="label-top">Class</label><input type="text" name="attr_character_class" />
+        <div class="da-header">
+            <div class="sheet-2colrow">
+                <div class="sheet-col" id="da-logo">
+                    <h2>Dragon Age</h2>
+                    <div>
+                        <label class="label-inline">Name</label><input class="input-inline" type="text" name="attr_name" />
                     </div>
-                    <div class="sheet-col">
-                        <div class="da-circular da-circular-large">
-                            <label class="label-top">Level</label><input type="number" min="1" name="attr_level" />
+                    <div>
+                        <label class="label-inline">Bkgrnd</label><input class="input-inline" type="text" name="attr_background" />
+                    </div>
+                    <div style="width:34%; float:left;">
+                        <label class="label-inline">Age</label><input class="input-inline" type="text" name="attr_age" />
+                    </div>
+                    <div style="width:66%; float:left">
+                        <label class="label-inline">Gender</label><input class="input-inline" type="text" name="attr_gender" />
+                    </div>
+                </div>
+
+                <div class="sheet-col">
+                    <div class="sheet-3colrow">
+                        <div class="sheet-col">
+                            <label class="label-top">Class</label><input type="text" name="attr_class" />
+                        </div>
+                        <div class="sheet-col">
+                            <div class="da-circular da-circular-large">
+                                <label class="label-watermark">Level</label><input class="input-watermarked" type="number" min="1" name="attr_level" />
+                            </div>
+                        </div>
+                        <div class="sheet-col">
+                            <label class="label-top">XP</label><input type="number" name="attr_xp" />
                         </div>
                     </div>
-                    <div class="sheet-col">
-                        <label class="label-top">XP</label><input type="number" name="attr_xp" />
+                </div>
+            </div>
+            <div class="sheet-2colrow">
+                <div class="sheet-col">
+                    <div style="width:34%; float:left;">
+                        <label class="label-top">Appearance</label>
+                        Height: <input type="text" name="attr_height" />
+                        Weight: <input type="text" name="attr_weight" />
+                    </div>
+                    <div style="width:66%; float:left;"><!-- disttingusing features freetext -->
+                        <label class="label-watermark">Distinguishing Features </label>
+                        <textarea class="input-watermark" name="attr_distinguishing-features"></textarea>
+                    </div>
+                </div>
+                <div class="sheet-col">
+                    <div class="sheet-3colrow">
+                        <div class="sheet-col">
+                            <div style="width:50%; float:left;">
+                                <label class="label-top">Speed</label>
+                                <div class="da-circular da-circular-small">
+                                    <input class="" type="text" name="attr_speed" />
+                                </div>
+                            </div>
+                            <div style="width:50%; float:left;">
+                                <label class="label-top">Def</label>
+                                <div class="da-circular da-circular-small">
+                                    <input class="" type="text" name="attr_defense" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sheet-col">
+                            <div style="width:50%; float:left;">
+                                <label class="label-top">Arm'</label>
+                                <div class="da-circular da-circular-small">
+                                    <label class="label-watermark">AP</label>
+                                    <input class="input-watermarked" type="text" name="attr_armor" />
+                                </div>
+                            </div>
+                            <div style="width:50%; float:left;">
+                                <label class="label-top">Pen</label>
+                                <div class="da-circular da-circular-small">
+                                    <input class="" type="text" name="attr_penalty" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sheet-col">
+                            <label class="label-top">Health</label><input type="number" name="attr_health" />
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     <!-- Trim below -->
