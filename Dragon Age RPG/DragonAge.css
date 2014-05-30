@@ -17,9 +17,10 @@
 
 .da label.label-inline {
     text-align: right;
-    width: 25%;
+    width: 33%;
     display:inline-block;
     height: 24px;
+    text-align: left;
 }
 
 .da label.label-watermark {
@@ -31,27 +32,48 @@
     border: 0;
 }
 
-.da input {
+.da input, .da textarea  {
     border: solid 1px #000;
+    width:100% !important;
+    background: transparent;
+}
+
+.da input.input-watermarked,  {
+    border: 0;
 }
 
 .da input.input-inline {
     display:inline-block;
-    width: 75%;
+    width: 66% !important;
     height: 24px;
 }
 
-.da input.input-watermark, .da textarea.input-watermark {
-    background: transparent !important;
+/***** Grid *****/
+.row {
+    margin-right: 5px;
+    width: calc(100% - 5px);
+    clear:both;
+    overflow: hidden;
+    margin-bottom: 5px;
 }
 
-/***** Header *****/
-.charsheet .da .da-header .sheet-2colrow .sheet-3colrow .sheet-col {
-    margin-right:0;
+.da .col {
+    margin-right: 5px;
 }
 
-.charsheet .da .da-header .sheet-2colrow .sheet-3colrow .sheet-col input {
-    width:100%;
+.da .col-half {
+    width: calc(50% - 5px);
+    float: left;
+}
+
+.da .col-third {
+    width: calc(33% - 5px);
+    float:left;
+}
+
+.da .col-two-thirds {
+    width: calc(66% - 5px);
+    float:left;
 }
 
 /***** Circular elements *****/
