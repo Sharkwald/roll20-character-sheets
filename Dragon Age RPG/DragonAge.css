@@ -22,22 +22,35 @@
     height: 24px;
 }
 
+.da label.label-watermark {
+    color:#ddd !important;
+    position: absolute;
+    z-index: -1;
+    text-align: center; 
+    background-color: transparent !important;
+    border: 0;
+}
+
 .da input {
     border: solid 1px #000;
 }
 
 .da input.input-inline {
     display:inline-block;
-    width: calc(75% - 4px);
+    width: 75%;
     height: 24px;
 }
 
+.da input.input-watermark, .da textarea.input-watermark {
+    background: transparent !important;
+}
+
 /***** Header *****/
-.charsheet .da .da-header.sheet-2colrow .sheet-3colrow .sheet-col {
+.charsheet .da .da-header .sheet-2colrow .sheet-3colrow .sheet-col {
     margin-right:0;
 }
 
-.charsheet .da .da-header.sheet-2colrow .sheet-3colrow .sheet-col input {
+.charsheet .da .da-header .sheet-2colrow .sheet-3colrow .sheet-col input {
     width:100%;
 }
 
@@ -48,19 +61,15 @@
     margin:0 auto;
 }
 
-.da-circular label{
-    color:#ddd !important;
-    position: absolute;
-    z-index: -1;
-    text-align: center; 
-    background-color: transparent !important;
-    border: 0;
-}
-
 .da-circular input {
     border:0;
     background-color: transparent;
     text-align: center;
+    height: 70% !important;
+    width: 70%  !important;
+    margin-top:15%;
+    margin-left:18%;
+    position: relative;
 }
 
 /*** large circular elements ***/
@@ -69,17 +78,43 @@
     width:80px;
 }
 
-.da-circular.da-circular-large label{
+.da-circular.da-circular-large label.label-watermark{
     height:25px;
     width: 80px !important;
-    top:40px;
+    top:25px;
     font-size: 25px;
+    position: relative;
+    text-align: center;
 }
 
 .da-circular.da-circular-large input {
-    height:50px !important;
-    width:50px !important;
-    margin-top:15px;
-    margin-left:15px;
     font-size: 2em;
+}
+
+.da-circular.da-circular-large input.input-watermarked{
+    top:-30px;
+}
+
+/*** small circular elements ***/
+.da-circular.da-circular-small {
+    height:40px;
+    width:40px;
+}
+
+.da-circular.da-circular-small label.label-watermark{
+    height:15px;
+    width: 40px !important;
+    top:10px;
+    font-size: 15px;
+    position: relative;
+    text-align: center;
+    display: block;
+}
+
+.da-circular.da-circular-small input {
+    font-size: 1.2em;
+}
+
+.da-circular.da-circular-small input.input-watermarked {
+    top:-15px;
 }
