@@ -1,0 +1,62 @@
+<!-- Remove HTML top & tailing prior to release -->
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="./app.css" />
+    <link rel="stylesheet" href="./DragonAge.css" />
+    <style>
+        .ui-dialog {
+            width: 832px !important;
+            margin: 0 auto !important;
+        }
+        body {
+            background: transparent !important;
+        }
+    </style>
+</head>
+<body>
+<div class="ui-dialog">
+<div class="charsheet">
+<div class="sheet-wrapper">
+    <!-- Trim above -->
+    <div class="da">
+        <div class="da-header sheet-2colrow">
+
+            <div class="sheet-col" id="da-logo">
+                <h2>Dragon Age</h2>
+                <div>
+                    <label class="label-inline">Name</label><input class="input-inline" type="text" name="attr_character_name" />
+                </div>
+                <div>
+                    <label class="label-inline">Bkgrnd</label><input class="input-inline" type="text" name="attr_character_bg" />
+                </div>
+            </div>
+
+            <div class="sheet-col">
+                <div class="sheet-3colrow">
+                    <div class="sheet-col">
+                        <label class="label-top">Class</label><input type="text" name="attr_character_class" />
+                    </div>
+                    <div class="sheet-col">
+                        <div class="da-circular da-circular-large">
+                            <label class="label-top">Level</label><input type="number" min="1" name="attr_level" />
+                        </div>
+                    </div>
+                    <div class="sheet-col">
+                        <label class="label-top">XP</label><input type="number" name="attr_xp" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Trim below -->
+</div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
