@@ -21,6 +21,7 @@
     display:inline-block;
     height: 24px;
     text-align: left;
+    float: left;
 }
 
 .da label.label-watermark {
@@ -32,20 +33,28 @@
     border: 0;
 }
 
-.da input, .da textarea  {
+.da input, .da textarea, .da select  {
     border: solid 1px #000;
     width:100% !important;
     background: transparent;
+    float: left;
+    display: block;
 }
 
 .da input.input-watermarked,  {
     border: 0;
 }
 
-.da input.input-inline {
+.da input.input-inline, .da select.input-inline {
     display:inline-block;
     width: 66% !important;
     height: 24px;
+}
+
+.da select.input-inline {
+    width:65% !important;
+    display: block;
+    float: left;
 }
 
 /***** Grid *****/
@@ -59,21 +68,27 @@
 
 .da .col {
     margin-right: 5px;
+    float: left;
 }
 
 .da .col-half {
     width: calc(50% - 5px);
-    float: left;
 }
 
 .da .col-third {
     width: calc(33% - 5px);
-    float:left;
 }
 
 .da .col-two-thirds {
     width: calc(66% - 5px);
-    float:left;
+}
+
+.da .col-quarter {
+    width: calc(25% - 5px);
+}
+
+.da .col-three-quarters {
+    width: calc(75% - 5px);
 }
 
 /***** Circular elements *****/
@@ -135,6 +150,7 @@
 
 .da-circular.da-circular-small input {
     font-size: 1.2em;
+    width: 100% !important;
 }
 
 .da-circular.da-circular-small input.input-watermarked {

@@ -26,7 +26,7 @@
                 <label class="label-inline">Name</label><input class="input-inline" type="text" name="attr_name" />
             </div>
             <div class="row">
-                <label class="label-inline">Bkgrnd</label><input class="input-inline" type="text" name="attr_background" />
+                <label class="label-inline">Background</label><input class="input-inline" type="text" name="attr_background" />
             </div>
             <div class="row">
                 <div class="col col-half">
@@ -37,16 +37,57 @@
                 </div>
             </div>
             <div class="row">
-                    <div class="col-third">
-                        <label class="label-top">Appearance</label>
-                        <label class="label-inline">Ht</label><input class="input-inline" type="text" name="attr_height" />
-                        <label class="label-inline">Wt</label><input class="input-inline" type="text" name="attr_weight" />
-                    </div>
-                    <div class="col col-two-thirds">
-                        <label class="label-watermark">Distinguishing Features </label>
-                        <textarea class="input-watermark" name="attr_distinguishing-features"></textarea>
+                <div class="col col-third">
+                    <label class="label-top">Appearance</label>
+                    <label class="label-inline">Ht</label><input class="input-inline" type="text" name="attr_height" />
+                    <label class="label-inline">Wt</label><input class="input-inline" type="text" name="attr_weight" />
+                </div>
+                <div class="col col-two-thirds">
+                    <label class="label-watermark">Distinguishing Features </label>
+                    <textarea class="input-watermark" name="attr_distinguishing-features"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col-three-quarters">
+                    <div class="row">
+                        <div class="col col-quarter">
+                            <label class="label-top">Speed</label>
+                            <div class="da-circular da-circular-small">
+                                <input class="" type="number" name="attr_speed" />
+                            </div>
+                        </div>
+                        <div class="col col-quarter">
+                            <label class="label-top">Def</label>
+                            <div class="da-circular da-circular-small">
+                                <input class="" type="number" name="attr_defense" />
+                            </div>
+                        </div>
+                        <div class="col col-quarter">
+                            <label class="label-top">Arm'</label>
+                            <div class="da-circular da-circular-small">
+                                <label class="label-watermark">AP</label>
+                                <input class="input-watermarked" type="number" name="attr_armor" />
+                            </div>
+                        </div>
+                        <div class="col col-quarter">
+                            <label class="label-top">Pen</label>
+                            <div class="da-circular da-circular-small">
+                                <input class="" type="number" name="attr_penalty" />
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="col col-quarter">
+                    <label class="label-top">Health</label><input type="number" name="attr_health" />
+                </div>
+            </div>
+            <div class="row">
+                <label class="label-inline">Armour Type</label>
+                <select class="input-inline" name="attr_armor_type">
+                    <option>None</option>
+                    <option>Light Leather</option>
+                </select>
+            </div>
         </div>
 
         <div class="col col-half">
@@ -65,37 +106,13 @@
             </div>
             <div class="row">
             <div class="col col-third">
-                    <div class="col col-half">
-                        <label class="label-top">Speed</label>
-                        <div class="da-circular da-circular-small">
-                            <input class="" type="text" name="attr_speed" />
-                        </div>
-                    </div>
-                    <div class="col col-half">
-                        <label class="label-top">Def</label>
-                        <div class="da-circular da-circular-small">
-                            <input class="" type="text" name="attr_defense" />
-                        </div>
-                    </div>
+                    
                 </div>
                 <div class="col col-third">
-                    <div class="col col-half">
-                        <label class="label-top">Arm'</label>
-                        <div class="da-circular da-circular-small">
-                            <label class="label-watermark">AP</label>
-                            <input class="input-watermarked" type="text" name="attr_armor" />
-                        </div>
-                    </div>
-                    <div class="col col-half">
-                        <label class="label-top">Pen</label>
-                        <div class="da-circular da-circular-small">
-                            <input class="" type="text" name="attr_penalty" />
-                        </div>
-                    </div>
+                    
+                    
                 </div>
-                <div class="col col-third">
-                    <label class="label-top">Health</label><input type="number" name="attr_health" />
-                </div>
+                
                 <div class="row">
                     <div class="col col-two-thirds">
                         <label class="label-watermark">Armor Type</label>
