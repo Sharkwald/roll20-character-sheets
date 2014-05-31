@@ -20,7 +20,7 @@
 <div class="sheet-wrapper">
     <!-- Trim above -->
     <div class="da">
-        <div class="col col-half">
+        <div class="col col-half"> <!-- Left side -->
             <h2>Dragon Age</h2>
             <div class="row">
                 <label class="label-inline">Name</label><input class="input-inline" type="text" name="attr_name" />
@@ -45,6 +45,152 @@
                 <div class="col col-two-thirds">
                     <label class="label-watermark">Distinguishing Features </label>
                     <textarea class="input-watermark" name="attr_distinguishing-features"></textarea>
+                </div>
+            </div>
+            
+ 
+            <div class="row statblock">
+                <div class="col col-three-quarters">
+                    <div class="row">
+                        <label>Communication
+                        <input type="checkbox" name="attr_comPrimary" value="1" />
+                        </label> 
+                    </div>
+                    <fieldset class="repeating_comFoci">
+                        <input type="text" name="attr_comFocus" />
+                    </fieldset>
+                </div>
+                <div class="col col-quarter">
+                    <input class="full-height" type="number" name="attr_communication" />
+                </div>
+            </div>
+            
+            <div class="row statblock">
+                <div class="col col-three-quarters">
+                    <div class="row">
+                        <label>Constitution
+                        <input type="checkbox" name="attr_conPrimary" value="1" />
+                        </label> 
+                    </div>
+                    <fieldset class="repeating_conFoci">
+                        <input type="text" name="attr_conFocus" />
+                    </fieldset>
+                </div>
+                <div class="col col-quarter">
+                    <input class="full-height" type="number" name="attr_constitution" />
+                </div>
+            </div>
+
+            <div class="row statblock">
+                <div class="col col-three-quarters">
+                    <div class="row">
+                        <label>Cunning
+                        <input type="checkbox" name="attr_cunPrimary" value="1" />
+                        </label> 
+                    </div>
+                    <fieldset class="repeating_cunFoci">
+                        <input type="text" name="attr_cunFocus" />
+                    </fieldset>
+                </div>
+                <div class="col col-quarter">
+                    <input class="full-height" type="number" name="attr_cunning" />
+                </div>
+            </div>
+            
+            <div class="row statblock">
+                <div class="col col-three-quarters">
+                    <div class="row">
+                        <label>Dexterity
+                        <input type="checkbox" name="attr_dexPrimary" value="1" />
+                        </label> 
+                    </div>
+                    <fieldset class="repeating_dexFoci">
+                        <input type="text" name="attr_dexFocus" />
+                    </fieldset>
+                </div>
+                <div class="col col-quarter">
+                    <input class="full-height" type="number" name="attr_dexterity" />
+                </div>
+            </div>
+            
+            <div class="row statblock">
+                <div class="col col-three-quarters">
+                    <div class="row">
+                        <label>Magic
+                        <input type="checkbox" name="attr_magPrimary" value="1" />
+                        </label> 
+                    </div>
+                    <fieldset class="repeating_magFoci">
+                        <input type="text" name="attr_magFocus" />
+                    </fieldset>
+                </div>
+                <div class="col col-quarter">
+                    <input class="full-height" type="number" name="attr_magic" />
+                </div>
+            </div>
+            
+            <div class="row statblock">
+                <div class="col col-three-quarters">
+                    <div class="row">
+                        <label>Perception
+                        <input type="checkbox" name="attr_perPrimary" value="1" />
+                        </label> 
+                    </div>
+                    <fieldset class="repeating_perFoci">
+                        <input type="text" name="attr_perFocus" />
+                    </fieldset>
+                </div>
+                <div class="col col-quarter">
+                    <input class="full-height" type="number" name="attr_perception" />
+                </div>
+            </div>
+
+            <div class="row statblock">
+                <div class="col col-three-quarters">
+                    <div class="row">
+                        <label>Strength
+                        <input type="checkbox" name="attr_strPrimary" value="1" />
+                        </label> 
+                    </div>
+                    <fieldset class="repeating_strFoci">
+                        <input type="text" name="attr_strFocus" />
+                    </fieldset>
+                </div>
+                <div class="col col-quarter">
+                    <input class="full-height" type="number" name="attr_strength" />
+                </div>
+            </div>
+            
+            <div class="row statblock">
+                <div class="col col-three-quarters">
+                    <div class="row">
+                        <label>Willpower
+                        <input type="checkbox" name="attr_wilPrimary" value="1" />
+                        </label> 
+                    </div>
+                    <fieldset class="repeating_wilFoci">
+                        <input type="text" name="attr_wilFocus" />
+                    </fieldset>
+                </div>
+                <div class="col col-quarter">
+                    <input class="full-height" type="number" name="attr_willpower" />
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="col col-half"> <!-- right side -->
+            <div class="row">
+                <div class="col col-third">
+                    <label class="label-top">Class</label><input type="text" name="attr_class" />
+                </div>
+                <div class="col col-third">
+                    <div class="da-circular da-circular-large">
+                        <label class="label-watermark">Level</label><input class="input-watermarked" type="number" min="1" name="attr_level" />
+                    </div>
+                </div>
+                <div class="col col-third">
+                    <label class="label-top">XP</label><input type="number" name="attr_xp" />
                 </div>
             </div>
             <div class="row">
@@ -87,41 +233,6 @@
                     <option>None</option>
                     <option>Light Leather</option>
                 </select>
-            </div>
-        </div>
-
-        <div class="col col-half">
-            <div class="row">
-                <div class="col col-third">
-                    <label class="label-top">Class</label><input type="text" name="attr_class" />
-                </div>
-                <div class="col col-third">
-                    <div class="da-circular da-circular-large">
-                        <label class="label-watermark">Level</label><input class="input-watermarked" type="number" min="1" name="attr_level" />
-                    </div>
-                </div>
-                <div class="col col-third">
-                    <label class="label-top">XP</label><input type="number" name="attr_xp" />
-                </div>
-            </div>
-            <div class="row">
-            <div class="col col-third">
-                    
-                </div>
-                <div class="col col-third">
-                    
-                    
-                </div>
-                
-                <div class="row">
-                    <div class="col col-two-thirds">
-                        <label class="label-watermark">Armor Type</label>
-                        <textarea class="input-watermarked" name="attr_armor_type"></textarea>
-                    </div>
-                    <div class="col-third">
-                        Hello
-                    </div>
-                </div>
             </div>
         </div>
     </div>
