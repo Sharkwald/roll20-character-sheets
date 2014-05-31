@@ -66,11 +66,12 @@
 .da .statblock {
     border: 1px solid #000;
     box-sizing: border-box;
- 	display:inline-block;
+ 	display: block;
 }
 
 .da .statblock label {
- 	display:inline-block;
+ 	display: inline-block;
+ 	width: 100%;
 }
 
 /***** Grid *****/
