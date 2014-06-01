@@ -75,6 +75,13 @@
 	text-align: center;
 }
 
+.da .statblock input[type='checkbox'] {
+    float:right;
+    display: inline-block;
+    width: auto !important;
+    margin-top: 2px;
+}
+
 /***** Grid *****/
 .row {
     margin-right: 5px;
