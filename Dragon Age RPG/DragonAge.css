@@ -39,6 +39,7 @@
     background: transparent;
     float: left;
     display: block;
+    margin: 0;
 }
 
 .da input.input-watermarked,  {
@@ -172,4 +173,35 @@
 
 .da-circular.da-circular-small input.input-watermarked {
     top:-15px;
+}
+
+/***** Primary Stats *****/
+.primary-stat {
+    border: 1px solid #000;
+}
+.primary-stat label.stat-name {
+    width: 100%;
+    display: block;
+    width:75%;
+    float: left;
+}
+
+.primary-stat .stat-name input[type='checkbox'] {
+    width: auto !important;
+    height: auto;
+    display: inline-block;
+    float:right;
+    margin-right:5px;
+    margin-top: 2px;
+}
+
+.primary-stat .stat-rating {
+    float: left;
+    width:25%;
+}
+
+.primary-stat .stat-rating input {
+    width:100% !important;
+    display:block;
+    float:left;
 }
