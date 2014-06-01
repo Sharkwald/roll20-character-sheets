@@ -45,10 +45,6 @@
     border: 0;
 }
 
-.da input.full-height {
-	height: 100%;
-}
-
 .da input.input-inline, .da select.input-inline {
     display:inline-block;
     width: 66% !important;
@@ -72,6 +68,11 @@
 .da .statblock label {
  	display: inline-block;
  	width: 100%;
+}
+
+.da input.stat {
+	font-size: 2em;
+	text-align: center;
 }
 
 /***** Grid *****/
