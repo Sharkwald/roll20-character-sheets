@@ -183,6 +183,21 @@
     top:-15px;
 }
 
+/***** Special cases *****/
+.distinguishing-features textarea {
+    height: 72px;
+    position: relative;
+    margin-top:-54px;
+}
+
+.distinguishing-features label.label-watermark {
+    width: 250px;
+    text-align: center;
+    font-size: 1.4em;
+    top: 10px;
+    position: relative;
+    display: inline-block;
+}
 /***** Primary Stats *****/
 .primary-stat {
     border: 1px solid #000;
