@@ -183,6 +183,18 @@
 }
 
 /***** Special cases *****/
+input[name='attr_class'], input[name='attr_xp'] {
+    height:58px !important;
+    text-align: center;
+    font-size: 2em;
+}
+
+input[name='attr_health'] {
+    height: 42px !important;
+    text-align: center;
+    font-size: 1.8em;
+}
+
 .distinguishing-features textarea {
     height: 72px;
     position: relative;
