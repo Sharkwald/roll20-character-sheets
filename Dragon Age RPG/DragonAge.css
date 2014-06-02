@@ -46,10 +46,6 @@
     border: 0;
 }
 
-.da input.full-height {
-	height: 100%;
-}
-
 .da input.input-inline, .da select.input-inline {
     display:inline-block;
     width: 66% !important;
@@ -73,6 +69,18 @@
 .da .statblock label {
  	display: inline-block;
  	width: 100%;
+}
+
+.da input.stat {
+	font-size: 2em;
+	text-align: center;
+}
+
+.da .statblock input[type='checkbox'] {
+    float:right;
+    display: inline-block;
+    width: auto !important;
+    margin-top: 2px;
 }
 
 /***** Grid *****/
@@ -175,33 +183,30 @@
     top:-15px;
 }
 
-/***** Primary Stats *****/
-.primary-stat {
-    border: 1px solid #000;
-}
-.primary-stat label.stat-name {
-    width: 100%;
-    display: block;
-    width:75%;
-    float: left;
+/***** Special cases *****/
+input[name='attr_class'], input[name='attr_xp'] {
+    height:58px !important;
+    text-align: center;
+    font-size: 2em;
 }
 
-.primary-stat .stat-name input[type='checkbox'] {
-    width: auto !important;
-    height: auto;
+input[name='attr_health'] {
+    height: 42px !important;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.distinguishing-features textarea {
+    height: 72px;
+    position: relative;
+    margin-top:-54px;
+}
+
+.distinguishing-features label.label-watermark {
+    width: 250px;
+    text-align: center;
+    font-size: 1.4em;
+    top: 10px;
+    position: relative;
     display: inline-block;
-    float:right;
-    margin-right:5px;
-    margin-top: 2px;
-}
-
-.primary-stat .stat-rating {
-    float: left;
-    width:25%;
-}
-
-.primary-stat .stat-rating input {
-    width:100% !important;
-    display:block;
-    float:left;
 }
