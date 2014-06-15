@@ -52,11 +52,7 @@
     height: 24px;
 }
 
-.da select.input-inline {
-    width:65% !important;
-    display: block;
-    float: left;
-}
+
 
 /***** Stat Block *****/
 
@@ -194,6 +190,22 @@ input[name='attr_health'] {
     height: 42px !important;
     text-align: center;
     font-size: 1.8em;
+}
+
+input[name='attr_health_max'] {
+    height: 42px !important;
+    text-align: center;
+    font-size: 1.8em;
+    margin-top:-29px;
+}
+
+.health-max label.label-watermark {
+    width: 70px;
+    text-align: center;
+    font-size: 1.4em;
+    top: 5px;
+    position: relative;
+    display: inline-block;
 }
 
 .distinguishing-features textarea {
