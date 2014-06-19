@@ -222,7 +222,6 @@ input[name='attr_health_max'] {
     position: relative;
     display: inline-block;
 }
-}
 
 input[name='attr_health'] {
     height: 42px !important;
